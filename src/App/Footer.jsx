@@ -3,13 +3,15 @@ import styled from 'styled-components';
 
 const Footer = () => {
     return (
-        <FooterStyled>My footer</FooterStyled>
+        <FooterStyled className='nested-wrapper'>
+            My footer
+        </FooterStyled>
     );
 }
 
 export default Footer;
 
 const FooterStyled = styled.footer`
-        background-color: gray;
+        background-color: teal;
         padding: 10px;
 `;

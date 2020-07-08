@@ -10,7 +10,7 @@ const App = () => {
 
     return (
         <AppStyled className='App'>
-            My Final Project App
+            
             <Header />
             <Nav/>
             <Main />
@@ -22,9 +22,9 @@ const App = () => {
 export default App;
 
 const AppStyled = styled.div`
-    width: 300px;
-    margin: 50px auto;
-    border: solid 1px #333;
-    padding: 20px;
-    text-align: center;
+    .nested-wrapper {
+        max-width: 1200px;
+        margin: auto;
+        outline: solid 1px red;
+    }
 `;
