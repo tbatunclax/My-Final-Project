@@ -24,7 +24,7 @@ const NavStyled = styled.nav`
         a {
             display: inline-block;
             text-align: center;
-            line-height: 48px;
+            line-height: 50px;
             font-size: 20px;
             background-color: #1c544f;
             color: white;
@@ -33,7 +33,7 @@ const NavStyled = styled.nav`
             width: 150px;
             margin-left: 10px;
             margin-right: 10px;
-            border-radius: 5%;
+            border-radius: 5px;
 
           &:hover {
               background-color: #1e3130;

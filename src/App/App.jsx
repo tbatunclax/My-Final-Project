@@ -26,5 +26,6 @@ const AppStyled = styled.div`
         max-width: 1200px;
         margin: auto;
         outline: solid 1px red;
+        padding: 10px;
     }
 `;
