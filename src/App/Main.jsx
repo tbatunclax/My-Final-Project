@@ -9,14 +9,14 @@ import Contact from './Pages/Contact.jsx';
 import Login from './Pages/Login.jsx';
 
 const Main = () => {
-    return(
+    return (
         <MainStyled className="nested-wrapper">
-            <Switch>
-                <Route path='/login' component={ Login } />
-                <Route path='/contact' component={ Contact } />
-                <Route path='/services' component={ Services } />
-                <Route path='/' component={ Home } />
-            </Switch>
+                <Switch>
+                    <Route path='/login' component={ Login } />
+                    <Route path='/contact' component={ Contact } />
+                    <Route path='/services' component={ Services } />
+                    <Route path='/' component={ Home } /> 
+                </Switch>
         </MainStyled>
     );
 }
@@ -24,8 +24,8 @@ const Main = () => {
 export default Main;
 
 const MainStyled = styled.main`
-            h1 {
-               font-size: 75px;
-            }
-            line-height: 100px;
+        h1 { 
+            font-size: 75px;
+
+        }        
 `;

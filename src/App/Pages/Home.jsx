@@ -1,17 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
-/* Helmet names browswer tab*/
-import Helmet from 'react-helmet';
+/* Components  --------*/
+import Tabbed from './Tabbed/Tabbed.jsx';
 
 const Home = () => {
 
     return (
-        <HomeStyled className='Home'>
-            <Helmet>
-                <title>Home :: Final Project App</title>
-            </Helmet>
-            Home 
+         <HomeStyled className='Home'>
+             <Helmet>
+                 <title>Home :: SPA App</title>
+             </Helmet>
+             <div className="nested-wrapper">
+                <Tabbed /> 
+             </div>
         </HomeStyled>
     );
 }
