@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-
-/* Helmet names browser tab*/
 import Helmet from 'react-helmet';
 
+/*--- components -----*/
+import ServicesContainer from './Services/ServicesContainer.jsx';
+
 const Services = () => {
-    return(
-        <ServicesStyled className="Services">
+
+    return (
+        <ServicesStyled className='Services'>
             <Helmet>
-                <title>Services :: Final Project App</title>
+                <title>Services :: SPA App</title>
             </Helmet>
-            Services
+            <div className="nested-wrapper">    
+                <ServicesContainer /> 
+            </div>    
         </ServicesStyled>
     );
 }
@@ -18,5 +22,5 @@ const Services = () => {
 export default Services;
 
 const ServicesStyled = styled.div`
-
+         
 `;

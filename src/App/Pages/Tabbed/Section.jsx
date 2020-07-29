@@ -28,7 +28,9 @@ const SectionStyled = styled.div`
         display: flex;
     }   
 
-
+    /*.column {
+        outline: solid 1px white;
+    } */
     .column1 {
         @media ${mq.tablet }{
         max-width: 300px;

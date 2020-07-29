@@ -6,14 +6,18 @@ import { staffData } from './staffData.js';
 
 const Staff = () => {
 
+
     const renderMembers = () => {
-            return staffData.map ((member, idx)=> {
-                return <StaffMember
-                    key = { idx }
-                    member = { member }
-                />;    
+            return staffData.map ((member, idx) =>{
+                return<StaffMember 
+                        key= { idx }
+                        member = {member}
+                
+                />;
             });
+
     }
+
 
 
     return (
@@ -29,8 +33,12 @@ const Staff = () => {
 export default Staff;
 
 const StaffStyled = styled.div`
-    .members{
-        display: flex;
-        flex-wrap: wrap;
+        background-color: teal;
+        .members { 
+           display: flex;
+           flex-wrap: wrap; 
+           justify-content: space-between;
+           justify-content: center;
+           
     }
 `;
