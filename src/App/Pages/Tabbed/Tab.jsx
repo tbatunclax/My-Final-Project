@@ -24,7 +24,7 @@ const Tab = ({tabItem, chosenTabSet, chosenTab}) => {
 export default Tab;
 
 const TabStyled = styled.div`
-    
+    cursor: pointer;
     display: inline-block;
 
     width: 100px;
