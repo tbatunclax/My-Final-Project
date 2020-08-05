@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { services } from './servicesData.js';
 
 /* Componets---------------*/
-import FilterNav from './FilerNav/FilterNav.jsx';
+import FilterNav from './FilterNav/FilterNav.jsx';
 import Gallery from './Gallery/Gallery.jsx';
 
 const ServicesContainer = () => {
