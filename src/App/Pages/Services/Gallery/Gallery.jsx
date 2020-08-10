@@ -6,17 +6,18 @@ import GalleryItem from './GalleryItem.jsx';
 
 const Gallery = ({services, currCategory}) => {
     
-    // console.log('Gallery: ', services, currCategory);
+    // console.log('Gallery clog: ', services, currCategory);
     
     /* render package title */
     const renderGallery = () =>{
         return services.packages
-            .filter((item,idx) => {
-                return (currCategory === services.categories[0] || item.category === currCategory)
-            })        
-            .map((item,idx) => {
-                return <GalleryItem key={idx} item={ item } />
-            });
+                .filter((item, idx) =>{
+                    //return (currCategory === services.categories[0] || item.category === currCategory)
+                    return (currCategory === 'All' || item.category === currCategory)
+                })
+                .map((item,idx) => {
+                    return <GalleryItem key={idx} item={ item } />
+                });
 
     }
     return (
@@ -29,7 +30,7 @@ const Gallery = ({services, currCategory}) => {
 export default Gallery;
 
 const GalleryStyled = styled.div`
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 `;

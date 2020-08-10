@@ -3,20 +3,48 @@ import styled from 'styled-components';
 
 /* Helmet names browser tab */
 import Helmet from 'react-helmet';
+/* Components ----------------- */
+import Deets from './Contact/Deets.jsx';
+import ContactForm from './Contact/ContactForm.jsx';
+import GoogleMap from './Contact/GoogleMap.jsx';
 
 const Contact = () => {
+
     return (
-        <ContactStyle className="Contact">
+        <ContactStyled className='Contact'>
             <Helmet>
-                <title>Contact :: Final Project App</title>
+                <title>Contact :: SPA App</title>
             </Helmet>
-            Contact
-        </ContactStyle>
+            <div className="nested-wrapper">
+                <div className="column column1">
+                    <Deets />
+                </div>
+                <div className="column column2">
+                    <ContactForm />
+                </div>
+            </div>
+            <GoogleMap />
+        </ContactStyled>
     );
 }
 
 export default Contact;
 
-const ContactStyle = styled.div`
+const ContactStyled = styled.div`
+.nested-wrapper {
+    display: flex;
 
+    .column {
+        padding: 20px;
+    }
+
+    .column1 {
+        width: 35%;
+        background-color: yellow;
+    }
+    .column2 {
+        width: 65%;
+        background-color: pink;
+    }
+}
 `;
