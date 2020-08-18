@@ -69,7 +69,7 @@ const Nav = () => {
 export default Nav;
 
 const NavStyled = styled.nav`
-        background-color: teal;
+        background-color: black;
         color : white;
         text-align: center;
 
@@ -80,9 +80,9 @@ const NavStyled = styled.nav`
         
             cursor: pointer;
             svg {
-                    width: 40px;
+                    width: 20px;
                     height: auto;
-                    color: red;
+                    color: gray;
                 }
                 display: block;
                 @media ${mq.tablet}{
@@ -111,7 +111,7 @@ const NavStyled = styled.nav`
             @media ${mq.tablet}{
                 width:100px;
                 line-height: 50px;
-                margin-left: 10px;
+                margin-left: 100px;
                 margin-right: 10px;
             }
 

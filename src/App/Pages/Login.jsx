@@ -4,13 +4,26 @@ import styled from 'styled-components';
 /* Helmet names browswer tab */
 import Helmet from 'react-helmet';
 
+
+import Deets from './Login/Deets.jsx';
+import LoginForm from './Login/LoginForm.jsx';
+import GoogleMap from './Login/GoogleMap.jsx';
+
 const Login = () => {
+
     return (
-        <LoginStyled className="Login">
+        <LoginStyled className='Login'>
             <Helmet>
-                <title>Login :: Final Project App</title>
+                <title>Login :: SPA App</title>
             </Helmet>
-            Login
+            <div className="nested-wrapper">
+                <div className="column column1">
+                    <Deets />
+                </div>
+                <div className="column column2">
+                    <LoginForm />
+                </div>
+            </div>
         </LoginStyled>
     );
 }
@@ -18,5 +31,21 @@ const Login = () => {
 export default Login;
 
 const LoginStyled = styled.div`
+        .nested-wrapper {
+                display: flex;
 
+                .column {
+                    padding: 20px;
+                }
+
+                .column1 {
+                    width: 35%;
+                    background-color: yellow;
+                }
+                .column2 {
+                    width: 65%;
+                    background-color: pink;
+                }
+            }
+    
 `;

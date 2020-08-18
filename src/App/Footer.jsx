@@ -3,10 +3,17 @@ import styled from 'styled-components';
 
 import { mq } from '../common/mediaQueries';
 
+
+
 const Footer = () => {
+
+    const getYear = new Date();
+    
+
     return (
         <FooterStyled className='nested-wrapper'>
-            My footer
+             
+             <h3>@ { getYear.getFullYear() }  </h3>
         </FooterStyled>
     );
 }
@@ -14,11 +21,11 @@ const Footer = () => {
 export default Footer;
 
 const FooterStyled = styled.footer`
-        background-color: teal;
-        padding: 10px;
+        background-color: gray;
+        padding: 50 0px;
 
         @media ${mq.tablet}{
-            background-color: orange;
+            background-color: black;
         }
         @media ${mq.desktop}{
             background-color: lavender;

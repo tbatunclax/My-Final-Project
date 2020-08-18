@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from './Pages/Home.jsx';
-import Services from './Pages/Services.jsx';
-import Contact from './Pages/Contact.jsx';
+import Services from './Pages/Services.jsx'; 
+import Contact from './Pages/Contact.jsx'; // Heros
 import Login from './Pages/Login.jsx';
 
 const Main = () => {

@@ -12,10 +12,10 @@ const Header = () => {
         <HeaderStyled>
             <div className="nested-wrapper">
                 <div className="row-container">
-                    <div className="logo"><FontAwesomeIcon icon={ faHotTub } /></div>
+                    {/*<div className="logo"><FontAwesomeIcon icon={ faHotTub } /></div> */}
                     <div className="text">
-                        <h2>SPA Sanctuary</h2>
-                        <h3>SPA for every occasion</h3>
+                        <h2>SM - Superhero Movies</h2>
+                        
                     </div>
                 </div>   
             </div>
