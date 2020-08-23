@@ -5,8 +5,8 @@ import styled from 'styled-components';
 import Helmet from 'react-helmet';
 /* Components ----------------- */
 import Deets from './Contact/Deets.jsx';
-import ContactForm from './Contact/ContactForm.jsx';
-import GoogleMap from './Contact/GoogleMap.jsx';
+
+import ReactPlayer from 'react-player';
 
 const Contact = () => {
 
@@ -20,10 +20,11 @@ const Contact = () => {
                     <Deets />
                 </div>
                 <div className="column column2">
-                    <ContactForm />
+                <ReactPlayer url='https://www.youtube.com/watch?v=0coLXVN5eT4' />
                 </div>
             </div>
-            <GoogleMap />
+           
+            
         </ContactStyled>
     );
 }

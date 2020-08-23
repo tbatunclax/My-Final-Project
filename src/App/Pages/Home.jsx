@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { Carousel } from "react-responsive-carousel";
-
+import Slideshow from './Slideshow/Slideshow.jsx';
 
 
 /* Components  --------*/
-import Tabbed from './Tabbed/Tabbed.jsx';
-import Staff from './Staff/Staff.jsx';
+import Feature from './Featuredpick/Feature.jsx';/* to move tabbed*/
+import LatestRelease from './LatestRelease/LatestRelease.jsx';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Home = () => {
@@ -15,37 +14,21 @@ const Home = () => {
     return (
          <HomeStyled className='Home'>
              <Helmet>
-                 <title>Home :: SPA App</title>
+                 <title>Home :: DC Marvel Movie App</title>
              </Helmet>
 
 
 
-  <Carousel showThumbs={false} 
-            infiniteLoop={ true }
-            autoPlay                
-  >
-    <div>
-      <img alt="" src="/assets/img/Staff/staff-1.jpeg" />
-      
-    </div>
-    <div>
-      <img alt="" src="/assets/img/Staff/staff-2.jpeg" />
-      
-    </div>
-    <div>
-      <img alt="" src="/assets/img/Staff/staff-3.jpeg" />
-      
-    </div>
-   
-  </Carousel>
+              <Slideshow className="nested-wrapper"/>
 
-
-
-             <div className="nested-wrapper">
-                <Tabbed /> 
+            <h1>Featured Review</h1>    
+            <div className="nested-wrapper">
+                <Feature/>
              </div>
+             
              <div className="nested-wrapper">
-                <Staff /> 
+                
+                <LatestRelease /> 
              </div>
         </HomeStyled>
     );
@@ -55,11 +38,9 @@ export default Home;
 
 const HomeStyled = styled.div`
 
+    h1{
+        color: white;
+    }
 
-
-.carousel .slide img {
-    max-height: 300px;  /* change this to whatever you want */
-    width: auto;
-}
     
 `;

@@ -4,17 +4,14 @@ import styled from 'styled-components';
 /* Components --------*/
 import GalleryItem from './GalleryItem.jsx';
 
-const Gallery = ({services, currCategory}) => {
+const Gallery = ({services}) => {
     
     // console.log('Gallery clog: ', services, currCategory);
     
     /* render package title */
     const renderGallery = () =>{
         return services.packages
-                .filter((item, idx) =>{
-                    //return (currCategory === services.categories[0] || item.category === currCategory)
-                    return (currCategory === 'All' || item.category === currCategory)
-                })
+                
                 .map((item,idx) => {
                     return <GalleryItem key={idx} item={ item } />
                 });

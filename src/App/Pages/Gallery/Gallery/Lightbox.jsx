@@ -1,13 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
+//fawsome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+    faWindowClose,
+} from '@fortawesome/free-solid-svg-icons';
+
 //{props}
 const Lightbox = ({hideAction, show=false, children}) => {
 
     const handleHide = () => {
         hideAction();
     }
-    
+    // isolate lightbox
+    const stopBubbleUp = (event) => {
+        event.stopPropagation();
+    }
     
     return (
         show &&
@@ -15,7 +25,12 @@ const Lightbox = ({hideAction, show=false, children}) => {
             className='Lightbox'
             onClick={ handleHide }
         >
-            <div className="light">
+            <div className="light" onClick={ stopBubbleUp }>
+                <FontAwesomeIcon 
+                    className='close' 
+                    icon={ faWindowClose } 
+                    onClick ={ handleHide }
+                />
                 {children}
             </div>
         </LightboxStyled>
@@ -44,6 +59,15 @@ const LightboxStyled = styled.div`
         top: 50%;
 
         transform: translate(-50%, -50%);
+
+        .close {
+            position: absolute;
+            right: 2px;
+            top: 5px;
+
+            cursor: pointer;
+        
+
     }
     
 `;

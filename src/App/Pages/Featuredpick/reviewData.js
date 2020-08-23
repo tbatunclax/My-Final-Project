@@ -1,0 +1,8 @@
+export const movieData = [
+    {
+        image: '/assets/img/Movies/thor-poster.jpg',
+        title: 'Thor - The Dark World',
+        year: '2013',
+        text: "<p>The story might perhaps be adequate for an animated film for children, with Thor, Odin and the others played by piglets. In the arena of movies about comic book superheroes, it is a desolate vastation. Nothing exciting happens, nothing of interest is said, and the special effects evoke not a place or a time but simply special effects.</p><p>Thor to begin with is not an interesting character. The gods of Greek, Roman and Norse mythology share the same problem, which is that what you see is what you get. They're defined by their attributes, not their personalities. Odin is Odin and acts as Odin and cannot act as other than Odin, and so on. Thor is a particularly limited case. What does he do? He wields a hammer. That is what he does. You don't have to be especially intelligent to wield a hammer, which is just as well, because in the film Thor (Chris Hemsworth) doesn't seem to be the brightest bulb in Asgard.</p><p>The land (sphere? state of mind? heaven?) known as Asgard is described in Norse mythology as being near Troy, or perhaps in Asia Minor. In the movie, as nearly as I can gather, it is not of this earth and must be elsewhere in the universe. It consists of towering spires and skyscrapers linked by bridges and buttresses and betraying no sign of a population, except when untold thousands of Asgardians are required to line up at attention like robotic Nazis to receive dictates from the throne of Odin (Anthony Hopkins).</p>",
+    },
+];

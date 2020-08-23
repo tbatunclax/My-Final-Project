@@ -55,10 +55,10 @@ const Nav = () => {
                 {
                     showMenu &&
                     <div className="links">
-                        <NavLink to="/" exact>Welcome</NavLink>
-                        <NavLink to="/services">Services</NavLink>
-                        <NavLink to="/contact">Contact</NavLink>
-                        <NavLink to="/login">Login</NavLink>
+                        <NavLink to="/" exact>Home</NavLink>
+                        <NavLink to="/trailers">Trailers</NavLink>
+                        <NavLink to="/contact">Heros</NavLink>
+                        <NavLink to="/gallery">Gallery</NavLink>
                     </div>
                 }    
             </div>        
@@ -72,38 +72,41 @@ const NavStyled = styled.nav`
         background-color: black;
         color : white;
         text-align: center;
-
+        
+       
         .hamburger {
             position: absolute;
             right: 20px;
             top: 20px;
-        
             cursor: pointer;
-            svg {
-                    width: 20px;
-                    height: auto;
-                    color: gray;
-                }
-                display: block;
+           
+
+          
                 @media ${mq.tablet}{
                     display: none;
                 }
+
+                
+
+                
+                
         }
 
         a {
             display: inline-block;
 
             text-align: center;
-            line-height: 50px;
+            line-height: 40px;
             font-size: 20px;
-            background-color: #105050;
+            /*background-color: #105050;*/
             color: white;
+            border-bottom: 2px solid transparent;
 
             text-decoration: none;
 
             margin-bottom: 10px;
 
-                border-radius: 5px;
+                /* border-radius: 5px;*/
 
                 width: 100%;
                 line-height: 40px;
@@ -111,7 +114,7 @@ const NavStyled = styled.nav`
             @media ${mq.tablet}{
                 width:100px;
                 line-height: 50px;
-                margin-left: 100px;
+                margin-left: 10px;
                 margin-right: 10px;
             }
 
@@ -120,11 +123,13 @@ const NavStyled = styled.nav`
             }    
 
             &:hover {
-                background-color: #103534;
+                color: gray;
+                border-bottom-color: red;
             }
 
             &.active {
-                background-color: pink;
+                color: gray;
+                
             }
         }
 `;

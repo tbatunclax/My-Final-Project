@@ -6,7 +6,7 @@ import { mq } from '../../../common/mediaQueries';
 import Lightbox from '../../../common/Lightbox.jsx';
 
 
-const StaffMember = ({member}) => {
+const LatestReleaseMember = ({member}) => {
 
      // state, method
     const [ showLBox, showLBoxUpdate ] = useState(false);
@@ -20,32 +20,38 @@ const StaffMember = ({member}) => {
     }
 
     return (
-        <StaffMemberStyled className='StaffMember'>
+        <LatestReleaseStyled className='LatestReleaseMember'>
             <img 
                 src={ member.image } 
-                alt ={ member.name } 
+                alt ={ member.title } 
                 onClick={ turnOn }
             /> 
-            <div className="title">{ member.name }</div>
+            <div className="title">{ member.year }</div>
 
             <Lightbox show={ showLBox } hideAction={ turnOff } width={ 200 }>
-                <img src={ member.image } alt ={ member.name } /> 
+                <img src={ member.image } alt ={ member.title } /> 
                 <div className="title">
-                { member.name }
+                { member.year }
                 </div>
             </Lightbox>
-        </StaffMemberStyled>
+        </LatestReleaseStyled>
     );
 }
 
-export default StaffMember;
+export default LatestReleaseMember;
 
-const StaffMemberStyled = styled.div`
+const LatestReleaseStyled = styled.div`
         
-        outline: solid 5px white;
+        outline: solid 1px white;
         margin: 20px;
         width: 200px;
+        cursor: pointer;
         
+        
+        @media ${mq.mobile}{
+            width: 80px;
+        }
+
         @media ${mq.tablet}{
             width: 130px;
         }
@@ -59,15 +65,20 @@ const StaffMemberStyled = styled.div`
             
         }
         .title {
-            background-color: maroon;
+            background-color:  #ed1d24;
             color: white;
-            padding: 5px;
+            padding: 8px 0px;
+            text-align: center;
+            font-family: Bangers;
         }
 
         .Lightbox {
             .title {
-                background-color: teal;
+                background-color: red;
             }
+        }
+        &:hover{
+            outline: solid 5px white;
         }
     
 `;

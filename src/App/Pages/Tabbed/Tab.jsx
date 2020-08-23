@@ -16,7 +16,7 @@ const Tab = ({tabItem, chosenTabSet, chosenTab}) => {
             className= { theClassName }    // prior 'Tab'
             onClick={ handleClick }
         >
-            { tabItem.title } 
+            <h2>{ tabItem.title } </h2>
         </TabStyled>
     );
 }
@@ -25,18 +25,20 @@ export default Tab;
 
 const TabStyled = styled.div`
     cursor: pointer;
+    color: white;
     display: inline-block;
-
+    border-top-right-radius: 5px;
     width: 100px;
-    line-height: 50px;
-    border-radius: 10px 10px 0px 0px;
+    line-height: 10px;
+    
     text-align: center;
 
-    margin-right: 10px;
+    margin-right: 2px;
 
-    background-color: #116565;
+    background-color: #efc2d5ab;
     &.active{
-        background-color: teal;
+        background-color: #616a75;
+        color: #8080808c;
     }
     
 `;

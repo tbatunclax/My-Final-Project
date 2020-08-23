@@ -16,10 +16,10 @@
         "http-proxy-middleware": "^1.0.1",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
+        "react-player": "^2.6.0",
         "react-router-dom": "^5.1.2",
         "react-scripts": "3.4.1",
-        "styled-components": "^5.1.1",
-        "react-responsive-carousel": "3.1.46"
+        "styled-components": "^5.1.1"
     },
     "devDependencies": {
         "classnames": "^2.2.6",
@@ -28,7 +28,7 @@
         "node-sass": "^4.13.1",
         "nodemon": "^2.0.2",
         "react-helmet": "^5.2.1",
-        "react-responsive-carousel": "^3.1.51"
+        "react-responsive-carousel": "^3.2.9"
     },
     "homepage": "https://spa-finished.herokuapp.com",
     "heroku-run-build-script": true,

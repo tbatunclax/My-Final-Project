@@ -1,5 +1,5 @@
 export const services =  {
-    categories: ['All', 'Massage', 'Water', 'Ammenities'],
+    
     packages: [
         { id: 1, image: '/assets/img/Services/service-1.jpg', title: 'Sauna', category: 'Ammenities', description: 'A description of our service...', cost: 9000 },
         { id: 2, image: '/assets/img/Services/service-2.jpg', title: 'Swimming Lanes', category: 'Water', description: 'A description of our service...', cost: 15000 },

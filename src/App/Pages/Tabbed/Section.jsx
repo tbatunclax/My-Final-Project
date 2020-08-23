@@ -21,16 +21,19 @@ const Section = ({chosenTab}) => {
 export default Section;
 
 const SectionStyled = styled.div`
-    background-color: teal;
-    padding: 20px;
+    background-color: #231f20;
+    color: white;
+    border-top: 1px solid #CCC;
+    border-color:white;
+    padding: 2px;
 
     @media ${mq.tablet} {
         display: flex;
     }   
 
-    /*.column {
-        outline: solid 1px white;
-    } */
+    .column {
+        border-top-color: white;
+    } 
     .column1 {
         @media ${mq.tablet }{
         max-width: 300px;

@@ -2,21 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { mq } from '../common/mediaQueries.js';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-    faHotTub,
-} from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
         <HeaderStyled>
             <div className="nested-wrapper">
                 <div className="row-container">
-                    {/*<div className="logo"><FontAwesomeIcon icon={ faHotTub } /></div> */}
+                <img className="logo" src="assets/img/logo.jpg" alt="logo"/>
                     <div className="text">
-                        <h2>SM - Superhero Movies</h2>
-                        
+                        <h1> Superhero Movies</h1>
                     </div>
+                    
                 </div>   
             </div>
         </HeaderStyled>
@@ -26,40 +22,53 @@ const Header = () => {
 export default Header;
 
 const HeaderStyled = styled.header`
-        background-color: teal;
+        
+
+        @media ${ mq.mobile } {
+            background-color: skyblue;
+        }
 
         @media ${mq.tablet} {
             background-color: orange;
         }
 
         @media ${mq.desktop} {
-            background-color: purple;
+            background-color: #231f20;
         }
 
         font-size: 30px;
 
         .row-container {
             display: flex;
-            justify-content: center;
+            justify-content: left;
         }
 
         .logo {
-            color: #1c544f;
-            margin-right: 10px;
-            svg{
-                width: 100px;
-                height: auto;
-            }
+            
+            height: 100px;
+            @media ${mq.mobile}{
+                img {
+                    width: 10%;
+                    height: auto;
+                }
+            }   
+
         }
         .text {
-            h2 {
-                font-size: 40px;
-                margin: 0px;
-                color: #09ef47;
+            
+            h1 {
+                color: #fff;
+                margin-top: auto;
+                padding-top: 20px;
+                padding-bottom: 0px;
             }
+            
             h3 {
                 font-size: 30px;
                 margin: 0px;
+            }
+            @media ${mq.mobile}{
+                display: none;
             }
         }
 `;

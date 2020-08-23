@@ -25,9 +25,9 @@ const FooterStyled = styled.footer`
         padding: 50 0px;
 
         @media ${mq.tablet}{
-            background-color: black;
+            background-color: #ed1d24;
         }
         @media ${mq.desktop}{
-            background-color: lavender;
+            background-color: #ed1d24;
         }
 `;

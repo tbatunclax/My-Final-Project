@@ -12,7 +12,7 @@ const App = () => {
     return (
         <AppStyled className='App'>
             <BrowserRouter>
-                <Header />
+                <Header /> 
                 <Nav/>
                 <Main />
                 <Footer />
@@ -27,7 +27,7 @@ const AppStyled = styled.div`
     .nested-wrapper {
         max-width: 1200px;
         margin: auto;
-        outline: solid 1px red;
-        padding: 10px;
+        /*       outline: solid 1px red;
+        padding: 10px; */
     }
 `;

@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import StaffMember from './StaffMember.jsx';
-import { staffData } from './staffData.js';
 
-const Staff = () => {
+import LatestReleaseMember from './LatestReleaseMember.jsx';
+import { movieData } from './latestreleaseData.js';
+
+const LatestRelease = () => {
 
 
     const renderMembers = () => {
-            return staffData.map ((member, idx) =>{
-                return<StaffMember 
+            return movieData.map ((member, idx) =>{
+                return<LatestReleaseMember 
                         key= { idx }
                         member = {member}
                 
@@ -21,19 +22,26 @@ const Staff = () => {
 
 
     return (
-        <StaffStyled className='Staff'>
-            Staff 
+        <LatestReleaseStyled className='Staff'>
+            <h1>Latest Releases</h1> 
             <div className="members">
                 { renderMembers() }
             </div>
-        </StaffStyled>
+        </LatestReleaseStyled>
     );
 }
 
-export default Staff;
+export default LatestRelease;
 
-const StaffStyled = styled.div`
-        background-color: teal;
+const LatestReleaseStyled = styled.div`
+    h1{
+        color: white;
+    } 
+    
+    
+
+    padding: 20px 0px;
+        /*background-color: teal;*/
         .members { 
            display: flex;
            flex-wrap: wrap; 
