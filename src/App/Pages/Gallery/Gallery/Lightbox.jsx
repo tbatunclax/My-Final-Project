@@ -66,8 +66,7 @@ const LightboxStyled = styled.div`
             top: 5px;
 
             cursor: pointer;
-        
-
     }
+    
     
 `;

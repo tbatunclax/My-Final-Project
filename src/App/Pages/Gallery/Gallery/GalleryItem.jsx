@@ -73,7 +73,7 @@ const GalleryItemStyled = styled.div`
         } 
         .column1 {
             @media ${mq.tablet }{
-            max-width: 300px;
+           
             width: 25%;
             }
             
@@ -82,12 +82,13 @@ const GalleryItemStyled = styled.div`
             }
         }
         .column2 {
-            @media ${mq.tablet}{
+            @media ${mq.mobile}{
             width: 75%;
-            
+            display: none;
+            padding: 20px;
         } 
         
-
+       
 
         
 `;
