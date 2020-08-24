@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { mq } from '../../../common/mediaQueries';
+
 import ReactPlayer from 'react-player';
 
 

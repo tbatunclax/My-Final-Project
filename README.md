@@ -1,10 +1,10 @@
 # Web 1 Starter Project
-Movie theater, database.
-- Categories: SciFI, Comedy, Action, Foreign
+SuperHero Movies database.
+- Categories: DC, Marvel
 - Title
-- - Actors / Director
-- - - Bio, 
-- - - Other movies
+- - Heros
+- - Bio, 
+- - Other movies
 - - Year
 - - Storyline
 - - Released Date

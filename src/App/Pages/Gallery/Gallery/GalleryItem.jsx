@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-
+import { mq } from '../../../../common/mediaQueries.js'
 import Lightbox from './Lightbox.jsx';
 
     
@@ -19,20 +19,25 @@ const GalleryItem = ({item}) => {
 
     return (
         <GalleryItemStyled className='GalleryItem'>
-            <div className="category">{ item.category }</div>
+            <div className="category ">{ item.category }</div>
             <img 
                 src={ item.image } 
                 alt={ item.title }
                 onClick={ turnOn }    
             />
-            <div className="title">{ item.title }</div>
+            
             <Lightbox show={ showLBox } hideAction={ turnOff }>
+            <div className="column column1">
                 <img src={ item.image } alt ={ item.title }/>
-                <h3>{ item.title }</h3>
-                <div className="description">
-                    { item.description }
+            </div>    
+                
+                <div className="description column column2">
+                <h2>{ item.title }</h2>
+                <h3>Description:</h3>  { item.description }
+                <br/><br/><strong>Runtime:</strong> { item.duration } hrs
                 </div>
-                <div className="cost">${ item.cost }</div>
+                
+                
             </Lightbox>
         </GalleryItemStyled>
     );
@@ -41,27 +46,48 @@ const GalleryItem = ({item}) => {
 export default GalleryItem;
 
 const GalleryItemStyled = styled.div`
+        
+        cursor: pointer;  
         position: relative;
-
-        border: solid 1px purple;
-
-        margin: 20px;
-        img { display: block; }
-
-        .category {
-            position: absolute;
-            top: 0; right: 0; left: 0;
-            background-color: rgba(255,255,255, .5);
-            padding: 10px;
-            font-size: 12px;
-            text-align: right;
-
+        color: white;
+        padding: 20px;
+        .light{
+            background-color: #271f1aed;
         }
-        .title {
-            position: absolute;
-            bottom: 0; right: 0; left: 0; 
-            background-color: rgba(255,255,255, .5);
-            padding: 10px;
-            font-size: 20px;
+        img { 
+             width: 200px;
+             height: auto;}
+
+             .category {
+                
+                background-color: rgba(245,19,19, .5);
+                padding: 10px;
+                font-size: 12px;
+                text-align: right;
+     
+            }    
+             
+        .column {
+            
+            justify-content: center;
+        } 
+        .column1 {
+            @media ${mq.tablet }{
+            max-width: 300px;
+            width: 25%;
+            }
+            
+            img {
+                max-width: 100%;
+            }
         }
+        .column2 {
+            @media ${mq.tablet}{
+            width: 75%;
+            
+        } 
+        
+
+
+        
 `;

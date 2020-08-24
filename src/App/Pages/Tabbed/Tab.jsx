@@ -35,10 +35,13 @@ const TabStyled = styled.div`
 
     margin-right: 2px;
 
-    background-color: #efc2d5ab;
+    background-color: red;
     &.active{
         background-color: #616a75;
         color: #8080808c;
+    }
+    &:hover{
+        background-color: gray;
     }
     
 `;

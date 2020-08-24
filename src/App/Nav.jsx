@@ -57,7 +57,7 @@ const Nav = () => {
                     <div className="links">
                         <NavLink to="/" exact>Home</NavLink>
                         <NavLink to="/trailers">Trailers</NavLink>
-                        <NavLink to="/contact">Heros</NavLink>
+                        <NavLink to="/heros">Heros</NavLink>
                         <NavLink to="/gallery">Gallery</NavLink>
                     </div>
                 }    

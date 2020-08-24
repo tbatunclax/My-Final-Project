@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import TrailerMovie from './TrailerMovie.jsx';
 import { movieData } from './trailerData.js';
 
-const Trailer = () => {
+const Trailers = () => {
 
 
     const renderTrailer = () => {
@@ -28,7 +28,7 @@ const Trailer = () => {
     );
 }
 
-export default Trailer;
+export default Trailers;
 
 const TrailerStyled = styled.div`
 

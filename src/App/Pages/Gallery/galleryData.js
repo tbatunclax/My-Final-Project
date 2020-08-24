@@ -1,25 +1,166 @@
 export const services =  {
     
     packages: [
-        { id: 1, image: '/assets/img/Services/service-1.jpg', title: 'Sauna', category: 'Ammenities', description: 'A description of our service...', cost: 9000 },
-        { id: 2, image: '/assets/img/Services/service-2.jpg', title: 'Swimming Lanes', category: 'Water', description: 'A description of our service...', cost: 15000 },
-        { id: 3, image: '/assets/img/Services/service-3.jpg', title: 'Room for 2', category: 'Water', description: 'A description of our service...', cost: 5000 },
-        { id: 4, image: '/assets/img/Services/service-4.jpg', title: 'Swedish Massage', category: 'Massage', description: 'A description of our service...', cost: 8000 },
-        { id: 5, image: '/assets/img/Services/service-5.jpg', title: 'Single Serving Tub', category: 'Water', description: 'A description of our service...', cost: 7500 },
-        { id: 6, image: '/assets/img/Services/service-6.jpg', title: 'Facial ', category: 'Ammenities', description: 'A description of our service...', cost: 9000 },
-        { id: 7, image: '/assets/img/Services/service-7.jpg', title: 'Open Swim', category: 'Water', description: 'A description of our service...', cost: 8000 },
-        { id: 8, image: '/assets/img/Services/service-8.jpg', title: 'Candlelight Massage', category: 'Massage', description: 'A description of our service...', cost: 9000 },
-        { id: 9, image: '/assets/img/Services/service-9.jpg', title: 'Couples Day', category: 'Water', description: 'A description of our service...', cost: 7000 },
-        { id: 10, image: '/assets/img/Services/service-10.jpg', title: 'Pedicure', category: 'Ammenities', description: 'A description of our service...', cost: 4000 },
-        { id: 11, image: '/assets/img/Services/service-11.jpg', title: 'Girls Day', category: 'Ammenities', description: 'A description of our service...', cost: 9000 },
-        { id: 12, image: '/assets/img/Services/service-12.jpg', title: 'Group Gathering', category: 'Water', description: 'A description of our service...', cost: 9000 },
-        { id: 13, image: '/assets/img/Services/service-13.jpg', title: 'Cold and Hot Treament', category: 'Water', description: 'A description of our service...', cost: 9000 },
-        { id: 14, image: '/assets/img/Services/service-14.jpg', title: 'Service 14', category: 'Water', description: 'A description of our service...', cost: 9000 },
-        { id: 15, image: '/assets/img/Services/service-15.jpg', title: 'Full Body Scrub', category: 'Ammenities', description: 'A description of our service...', cost: 9000 },
-        { id: 16, image: '/assets/img/Services/service-16.jpg', title: 'Deep tissue', category: 'Massage', description: 'A description of our service...', cost: 9000 },
-        { id: 17, image: '/assets/img/Services/service-17.jpg', title: 'Hot Stone Massage', category: 'Massage', description: 'A description of our service...', cost: 9000 },
-        { id: 18, image: '/assets/img/Services/service-18.jpg', title: 'Hot, Cold and In Between', category: 'Water', description: 'A description of our service...', cost: 3500 },
-        { id: 19, image: '/assets/img/Services/service-19.jpg', title: 'Me Time', category: 'Water', description: 'A description of our service...', cost: 9000 },
-        { id: 20, image: '/assets/img/Services/service-20.jpg', title: 'Reflexology', category: 'Ammenities', description: 'A description of our service...', cost: 2000 },
+        { 
+            id: 1, 
+            image: '/assets/img/Movies/mvt-aquaman.jpg', 
+            title: 'Aquaman', 
+            category: 'DC', 
+            description: 'Aquaman is a 2018 American superhero film based on the DC Comics character of the same name. Distributed by Warner Bros. Pictures, it is the sixth film in the DC Extended Universe (DCEU). The film was directed by James Wan, from a screenplay by David Leslie Johnson-McGoldrick and Will Beall and stars Jason Momoa as Aquaman, with Amber Heard, Willem Dafoe, Patrick Wilson, Dolph Lundgren, Yahya Abdul-Mateen II, Ludi Lin, Temuera Morrison, and Nicole Kidman in supporting roles. In the film, Aquaman sets out to lead the underwater kingdom of Atlantis, replacing his half-brother, King Orm, who seeks to unite the seven underwater kingdoms against the surface world.', 
+            duration: '2.5' 
+        },
+        { 
+            id: 2, 
+            image: '/assets/img/Movies/mvt-xmen.jpg', 
+            title: 'X-Men', 
+            category: 'Marvel', 
+            description: 'X-Men fight for peace and equality between normal humans and mutants in a world where anti-mutant bigotry is fierce and widespread. They are led by Charles Xavier, also known as Professor X, a powerful mutant telepath who can control and read minds', 
+            duration: '2.5' 
+        },
+        { 
+            id: 3, 
+            image: '/assets/img/Movies/mvt-wonder-woman.jpg', 
+            title: 'Wonder Woman', 
+            category: 'DC', 
+            description: 'When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.', 
+            duration: '2.3' 
+        },
+        { 
+            id: 4, 
+            image: '/assets/img/Movies/mvt-captain-america.jpg', 
+            title: 'Captain America: The First Avenger', 
+            category: 'Marvel', 
+            description: 'The First Avenger is a 2011 American superhero film based on the Marvel Comics character Captain America.  During World War II, Steve Rogers, a frail man, is transformed into the super-soldi', 
+            duration: '2' 
+        },
+        { 
+            id: 1, 
+            image: '/assets/img/Movies/mvt-aquaman.jpg', 
+            title: 'Aquaman', 
+            category: 'DC', 
+            description: 'Aquaman is a 2018 American superhero film based on the DC Comics character of the same name. Distributed by Warner Bros. Pictures, it is the sixth film in the DC Extended Universe (DCEU). The film was directed by James Wan, from a screenplay by David Leslie Johnson-McGoldrick and Will Beall and stars Jason Momoa as Aquaman, with Amber Heard, Willem Dafoe, Patrick Wilson, Dolph Lundgren, Yahya Abdul-Mateen II, Ludi Lin, Temuera Morrison, and Nicole Kidman in supporting roles. In the film, Aquaman sets out to lead the underwater kingdom of Atlantis, replacing his half-brother, King Orm, who seeks to unite the seven underwater kingdoms against the surface world.', 
+            duration: '2.5' 
+        },
+        { 
+            id: 2, 
+            image: '/assets/img/Movies/mvt-xmen.jpg', 
+            title: 'X-Men', 
+            category: 'Marvel', 
+            description: 'X-Men fight for peace and equality between normal humans and mutants in a world where anti-mutant bigotry is fierce and widespread. They are led by Charles Xavier, also known as Professor X, a powerful mutant telepath who can control and read minds', 
+            duration: '2.5' 
+        },
+        { 
+            id: 3, 
+            image: '/assets/img/Movies/mvt-wonder-woman.jpg', 
+            title: 'Wonder Woman', 
+            category: 'DC', 
+            description: 'When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.', 
+            duration: '2.3' 
+        },
+        { 
+            id: 4, 
+            image: '/assets/img/Movies/mvt-captain-america.jpg', 
+            title: 'Captain America: The First Avenger', 
+            category: 'Marvel', 
+            description: 'The First Avenger is a 2011 American superhero film based on the Marvel Comics character Captain America.  During World War II, Steve Rogers, a frail man, is transformed into the super-soldi', 
+            duration: '2' 
+        },
+        { 
+            id: 1, 
+            image: '/assets/img/Movies/mvt-aquaman.jpg', 
+            title: 'Aquaman', 
+            category: 'DC', 
+            description: 'Aquaman is a 2018 American superhero film based on the DC Comics character of the same name. Distributed by Warner Bros. Pictures, it is the sixth film in the DC Extended Universe (DCEU). The film was directed by James Wan, from a screenplay by David Leslie Johnson-McGoldrick and Will Beall and stars Jason Momoa as Aquaman, with Amber Heard, Willem Dafoe, Patrick Wilson, Dolph Lundgren, Yahya Abdul-Mateen II, Ludi Lin, Temuera Morrison, and Nicole Kidman in supporting roles. In the film, Aquaman sets out to lead the underwater kingdom of Atlantis, replacing his half-brother, King Orm, who seeks to unite the seven underwater kingdoms against the surface world.', 
+            duration: '2.5' 
+        },
+        { 
+            id: 2, 
+            image: '/assets/img/Movies/mvt-xmen.jpg', 
+            title: 'X-Men', 
+            category: 'Marvel', 
+            description: 'X-Men fight for peace and equality between normal humans and mutants in a world where anti-mutant bigotry is fierce and widespread. They are led by Charles Xavier, also known as Professor X, a powerful mutant telepath who can control and read minds', 
+            duration: '2.5' 
+        },
+        { 
+            id: 3, 
+            image: '/assets/img/Movies/mvt-wonder-woman.jpg', 
+            title: 'Wonder Woman', 
+            category: 'DC', 
+            description: 'When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.', 
+            duration: '2.3' 
+        },
+        { 
+            id: 4, 
+            image: '/assets/img/Movies/mvt-captain-america.jpg', 
+            title: 'Captain America: The First Avenger', 
+            category: 'Marvel', 
+            description: 'The First Avenger is a 2011 American superhero film based on the Marvel Comics character Captain America.  During World War II, Steve Rogers, a frail man, is transformed into the super-soldi', 
+            duration: '2' 
+        },
+        { 
+            id: 1, 
+            image: '/assets/img/Movies/mvt-aquaman.jpg', 
+            title: 'Aquaman', 
+            category: 'DC', 
+            description: 'Aquaman is a 2018 American superhero film based on the DC Comics character of the same name. Distributed by Warner Bros. Pictures, it is the sixth film in the DC Extended Universe (DCEU). The film was directed by James Wan, from a screenplay by David Leslie Johnson-McGoldrick and Will Beall and stars Jason Momoa as Aquaman, with Amber Heard, Willem Dafoe, Patrick Wilson, Dolph Lundgren, Yahya Abdul-Mateen II, Ludi Lin, Temuera Morrison, and Nicole Kidman in supporting roles. In the film, Aquaman sets out to lead the underwater kingdom of Atlantis, replacing his half-brother, King Orm, who seeks to unite the seven underwater kingdoms against the surface world.', 
+            duration: '2.5' 
+        },
+        { 
+            id: 2, 
+            image: '/assets/img/Movies/mvt-xmen.jpg', 
+            title: 'X-Men', 
+            category: 'Marvel', 
+            description: 'X-Men fight for peace and equality between normal humans and mutants in a world where anti-mutant bigotry is fierce and widespread. They are led by Charles Xavier, also known as Professor X, a powerful mutant telepath who can control and read minds', 
+            duration: '2.5' 
+        },
+        { 
+            id: 3, 
+            image: '/assets/img/Movies/mvt-wonder-woman.jpg', 
+            title: 'Wonder Woman', 
+            category: 'DC', 
+            description: 'When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.', 
+            duration: '2.3' 
+        },
+        { 
+            id: 4, 
+            image: '/assets/img/Movies/mvt-captain-america.jpg', 
+            title: 'Captain America: The First Avenger', 
+            category: 'Marvel', 
+            description: 'The First Avenger is a 2011 American superhero film based on the Marvel Comics character Captain America.  During World War II, Steve Rogers, a frail man, is transformed into the super-soldi', 
+            duration: '2' 
+        },
+        { 
+            id: 1, 
+            image: '/assets/img/Movies/mvt-aquaman.jpg', 
+            title: 'Aquaman', 
+            category: 'DC', 
+            description: 'Aquaman is a 2018 American superhero film based on the DC Comics character of the same name. Distributed by Warner Bros. Pictures, it is the sixth film in the DC Extended Universe (DCEU). The film was directed by James Wan, from a screenplay by David Leslie Johnson-McGoldrick and Will Beall and stars Jason Momoa as Aquaman, with Amber Heard, Willem Dafoe, Patrick Wilson, Dolph Lundgren, Yahya Abdul-Mateen II, Ludi Lin, Temuera Morrison, and Nicole Kidman in supporting roles. In the film, Aquaman sets out to lead the underwater kingdom of Atlantis, replacing his half-brother, King Orm, who seeks to unite the seven underwater kingdoms against the surface world.', 
+            duration: '2.5' 
+        },
+        { 
+            id: 2, 
+            image: '/assets/img/Movies/mvt-xmen.jpg', 
+            title: 'X-Men', 
+            category: 'Marvel', 
+            description: 'X-Men fight for peace and equality between normal humans and mutants in a world where anti-mutant bigotry is fierce and widespread. They are led by Charles Xavier, also known as Professor X, a powerful mutant telepath who can control and read minds', 
+            duration: '2.5' 
+        },
+        { 
+            id: 3, 
+            image: '/assets/img/Movies/mvt-wonder-woman.jpg', 
+            title: 'Wonder Woman', 
+            category: 'DC', 
+            description: 'When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.', 
+            duration: '2.3' 
+        },
+        { 
+            id: 4, 
+            image: '/assets/img/Movies/mvt-captain-america.jpg', 
+            title: 'Captain America: The First Avenger', 
+            category: 'Marvel', 
+            description: 'The First Avenger is a 2011 American superhero film based on the Marvel Comics character Captain America.  During World War II, Steve Rogers, a frail man, is transformed into the super-soldi', 
+            duration: '2' 
+        },
+        
     ],
 }
